@@ -41,7 +41,46 @@
 .right{
     color: #252432;
 }
-  @media screen and (max-width:592px){
+.banner{
+    display: flex;
+    max-width: 900px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    align-items: end;
+    /* border: 2px solid turquoise; */
+}
+.banner-text, .banner-image{
+    padding: 20px;
+    flex: 1 1 50%;
+}
+.banner-text h1{
+    font-size: 2.2rem;
+    line-height: 1.3;
+}
+.bold{
+    color: #000000;
+    font-weight: bold;
+    /* font-size: 60px; */
+}
+.orange{
+    color: #E95A08;
+    font-weight: bold;
+    /* font-size: 60px; */
+}
+.banner-text p{
+    margin-top: 10px;
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.3;
+    
+}
+.banner-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width:592px){
          .nav-manu a{
             display: none;
          }
@@ -54,6 +93,20 @@
          }
          .logo{
             flex: 1;
+         }
+         .banner{
+            flex-direction: column;
+         }
+         .banner-image, .banner-text{
+            flex: 1 1 100%;
+            padding: 15px;
+            text-align: center;
+         }
+         .banner-text h1{
+            font-size: 1.8rem;
+         }
+         .banner-text p{
+            font-size: 0.9rem;
          }
          }
   
